@@ -1,7 +1,7 @@
 import './AddCoffee.css'
 
 export default function AddCoffee() {
-    const getCoffees = () => {
+    const getCoffees = (setCoffees) => {
         fetch('https:first-deployed-api-c12.web.app/coffees')
         .then(res => res.json())
         .then(data => console.log(data))
