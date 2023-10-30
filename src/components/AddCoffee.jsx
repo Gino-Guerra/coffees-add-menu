@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import './AddCoffee.css'
 
 export default function AddCoffee({setCoffees}) {
@@ -8,7 +9,9 @@ export default function AddCoffee({setCoffees}) {
         .catch(alert)
     }
 
-
+    useEffect(()=>{
+        getCoffees()
+    },[])
 
 
     const handleSubmit = (e) => {

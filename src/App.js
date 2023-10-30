@@ -8,7 +8,7 @@ export default function App() {
   const [coffees, setCoffees] = useState()
   return (<>
   <Hero />
-  <AddCoffee setcoffees={setCoffees}/>
+  <AddCoffee setCoffees={setCoffees}/>
 <CoffeeList coffees={coffees}/>
 
 

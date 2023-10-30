@@ -1,8 +1,9 @@
-export default function CoffeeCard(){
+
+export default function CoffeeCard({coffee}){
     return(
         <div className="coffee-card">
             <h3>{coffee.Name}</h3>
-            <p>{coffee.description}</p>
+            <p>{coffee.Description}</p>
         </div>
     )
 }
